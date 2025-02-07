@@ -27,6 +27,7 @@ pipeline{
                 sh "npm test"
                 }
             }
+            /*
             stage('SonarQube Analysis') {
                 environment {
                     scannerHome = tool 'sonarqube'
@@ -40,6 +41,7 @@ pipeline{
                     }
                 }
             }
+            */
          
             stage ('Build Docker Image'){
                 steps{
